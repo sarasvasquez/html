@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="tel"],
+        .form-group input[type="date"],
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 80px;
+        }
+        .form-group input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .section-title {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario Completo</h2>
+        
+        <form action="#" method="post">
+            <!-- Información personal -->
+            <div class="section-title">Información Personal</div>
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="nacionalidad">Nacionalidad:</label>
+                <input type="text" id="nacionalidad" name="nacionalidad" required>
+            </div>
+            
+            <!-- Educación -->
+            <div class="section-title">Educación</div>
+            <div class="form-group">
+                <label for="institucion">Nombre de la Institución:</label>
+                <input type="text" id="institucion" name="institucion" required>
+            </div>
+            <div class="form-group">
+                <label for="titulo">Título Obtenido:</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </div>
+            <div class="form-group">
+                <label for="inicio-estudios">Fecha de Inicio:</label>
+                <input type="date" id="inicio-estudios" name="inicio-estudios" required>
+            </div>
+            <div class="form-group">
+                <label for="fin-estudios">Fecha de Finalización:</label>
+                <input type="date" id="fin-estudios" name="fin-estudios">
+            </div>
+            <div class="form-group">
+                <label for="descripcion-estudios">Descripción de estudios:</label>
+                <textarea id="descripcion-estudios" name="descripcion-estudios"></textarea>
+            </div>
+            
+            <!-- Experiencia laboral -->
+            <div class="section-title">Experiencia Laboral</div>
+            <div class="form-group">
+                <label for="empresa">Nombre de la Empresa:</label>
+                <input type="text" id="empresa" name="empresa" required>
+            </div>
+            <div class="form-group">
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" required>
+            </div>
+            <div class="form-group">
+                <label for="inicio-trabajo">Fecha de Inicio:</label>
+                <input type="date" id="inicio-trabajo" name="inicio-trabajo" required>
+            </div>
+            <div class="form-group">
+                <label for="fin-trabajo">Fecha de Finalización:</label>
+                <input type="date" id="fin-trabajo" name="fin-trabajo">
+            </div>
+            <div class="form-group">
+                <label for="descripcion-trabajo">Descripción del trabajo:</label>
+                <textarea id="descripcion-trabajo" name="descripcion-trabajo"></textarea>
+            </div>
+            
+            <!-- Habilidades -->
+            <div class="section-title">Habilidades</div>
+            <div class="form-group">
+                <label for="habilidad">Habilidad:</label>
+                <input type="text" id="habilidad" name="habilidad" required>
+            </div>
+            <div class="form-group">
+                <label for="nivel-habilidad">Nivel de habilidad:</label>
+                <input type="text" id="nivel-habilidad" name="nivel-habilidad" required>
+            </div>
+            
+            <!-- Certificaciones -->
+            <div class="section-title">Certificaciones</div>
+            <div class="form-group">
+                <label for="certificacion">Certificación:</label>
+                <input type="text" id="certificacion" name="certificacion" required>
+            </div>
+            <div class="form-group">
+                <label for="organizacion">Organización:</label>
+                <input type="text" id="organizacion" name="organizacion" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha-emision">Fecha de Emisión:</label>
+                <input type="date" id="fecha-emision" name="fecha-emision" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha-expiracion">Fecha de Expiración:</label>
+                <input type="date" id="fecha-expiracion" name="fecha-expiracion">
+            </div>
+            
+            <!-- Botón de envío -->
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
